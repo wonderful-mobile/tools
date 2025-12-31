@@ -48,7 +48,7 @@ patch_susfs_old() {
 }
 
 patch_susfs_gki() {
-    echo "Applying SuSFS patch v1.5.7 for kernel >= 5.10..."
+    echo "Applying SuSFS patch v1.5.9 for kernel >= 5.10..."
     local patch_url="https://raw.githubusercontent.com/galaxybuild-project/tools/refs/heads/main/Patches/0001_susfs_157_for_ksunext.patch"
     curl -LSs "$patch_url" > susfs-gki.patch
     patch -p1 < susfs-gki.patch
@@ -85,7 +85,7 @@ fi
 echo "############################################"
 echo "KernelSU Next with SuSFS Patches"
 echo "Made by @blueskychan-dev, @sidex15, @rifsxd"
-echo "Last updated: 22 May 2025"
+echo "Last updated: 31 Dec 2025"
 echo "############################################"
 echo ""
 echo "⚠️ This script will be **DEPRECATED** soon!"
